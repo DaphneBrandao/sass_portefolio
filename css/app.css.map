@@ -1,1 +1,17 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"app.css"}
+{
+    "version": 3,
+    "mappings": "AIAA,AAAA,IAAI,CAAC;EACD,MAAM,EAAE,IAAI;CACf;;AAED,AAAA,IAAI,CAAC;EACD,gBAAgB,EFqBD,IAAI;CEpBtB;;AEND,AAAA,OAAO,CAAC;EACJ,OAAO,EAAC,IAAI;EACZ,wBAAwB;CAE3B;;ACJD,AAAA,aAAa,CAAC;ENOV,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,WAAW,EAAE,QAAQ;EACrB,gBAAgB,EAAE,MAAM;CMR3B",
+    "sources": [
+        "../sass/app.scss",
+        "../sass/_mixins.scss",
+        "../sass/_variable.scss",
+        "../sass/1-base/_base-dir.scss",
+        "../sass/1-base/_base.scss",
+        "../sass/2-layouts/layout-dir.scss",
+        "../sass/2-layouts/header.scss",
+        "../sass/2-layouts/main.scss",
+        "../sass/_mediaqueries.scss"
+    ],
+    "names": [],
+    "file": "app.css"
+}

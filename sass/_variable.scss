@@ -1,0 +1,27 @@
+
+
+//CONTENT - type features
+$primarytext-color: #ffff;
+$secondarytext-color: rba(255, 255, 255, 0.87);
+$placeholder-color: #9fa3a7;
+
+$font-weitghts:(
+    "light": 100,
+    "regular": 300,
+);
+
+$h1: 1rem;
+
+$font-family-sans-serif: "Segoe UI Light", "Segoe WPC", "Segoe UI", Helvetica, Arial, "Arial Unicode MS", Sans-Serif;
+
+//BREAKPOINTS
+
+$small: 320px; //mobile
+$medium: 768px; //tablet
+$large: 1280px; //desktop
+
+//FLUID TYPE
+
+//BGD
+
+$background-color: grey;

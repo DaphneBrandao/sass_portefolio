@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass/2-layouts/main.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

@@ -1,0 +1,24 @@
+@mixin flexHeader {
+    display: flex;
+    justify-content: flex-end;
+    background-color: hotpink;
+}
+
+@mixin flexMain ($direction) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: indigo;
+}
+
+//size
+@mixin size ($height, $width){
+    height: $height;
+    width: $width;
+}
+
+//fluid type
+
+@mixin fluid-type {
+    //font-size: ();
+}

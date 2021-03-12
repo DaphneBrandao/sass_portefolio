@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,OAAO,CAAC;EACJ,OAAO,EAAC,IAAI;EACZ,wBAAwB;CAE3B",
+    "sources": [
+        "../sass/2-layouts/layout-dir.scss",
+        "../sass/2-layouts/header.scss",
+        "../sass/2-layouts/main.scss"
+    ],
+    "names": [],
+    "file": "layout-dir.css"
+}

@@ -1,3 +1,17 @@
-@import "./1-base/base-dir";
+//MIXINS
+@import "./mixins";
 
-@import "./2-layouts/layout-dir.scss";
+//VARIABLES
+@import "./variable";
+
+//BASE
+@import "1-base/base-dir";
+
+//LAYOUTS
+@import "2-layouts/layout-dir.scss";
+
+
+
+
+//MEDIAQUERIES
+@import "./mediaqueries";
