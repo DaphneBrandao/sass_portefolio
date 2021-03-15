@@ -1,0 +1,27 @@
+.main {
+    @include flex;
+}
+
+.main-content {
+    width: 100%;
+    @include flex;
+    @include flex-direction(column);
+    @include justify-content(center);
+    @include align-items(center);
+}
+
+.logo {
+    width: 132px;
+    height: 42px;
+    margin:40px 94px 26px 94px;
+}
+
+
+.content {
+    @include size(280px, 84px);
+    text-align: center;
+}
+
+.content-tittle {
+    margin-top: 20px;
+}

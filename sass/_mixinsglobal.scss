@@ -1,0 +1,76 @@
+//FONT SIZE
+/*@mixin font-size ($sizeValue: 1.6) {
+    font-size: ($sizeValue * 10) + px;
+    font-size: $sizeValue + rem;
+}*/
+
+//FLUID-TYPE
+@function strip-unit($value) {
+    @return $value / ($value * 0 + 1);
+}
+
+@mixin fluid-type ($min-vw, $max-vw, $min-font-size, $max-font-size ) 
+{
+    $u1: unit($min-vw);
+    $u2: unit($max-vw);
+    $u3: unit($min-font-size);
+    $u4: unit($max-font-size);
+
+    @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 
+    {
+        & 
+        {
+            font-size: $min-font-size;
+            @media screen and (min-width: $min-vw) 
+            {
+                font-size: calc(#{$min-font-size} +
+               #{strip-unit($max-font-size - $min-font-size)}
+               * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+            }
+            @media screen and (min-width: $max-vw) 
+            {
+                font-size: $max-font-size;
+            }
+        }
+    }  
+}
+//SIZE
+@mixin size ($width, $height) {
+    width: $width;
+    height: $height;
+}
+//MARGIN
+@mixin margin ($top, $right, $bottom, $left) {
+    margin-top: $top;
+    margin-right: $right;
+    margin-top: $bottom;
+    margin-left: $left;
+}
+
+//PLACEHOLER
+
+@mixin placeholder {
+ 
+    &::-webkit-input-placeholder 
+    {
+        @content;
+    }
+    
+    &:-moz-placeholder 
+    {
+   
+        @content;
+    }
+    &:-ms-input-placeholder 
+    {
+        @content;
+    }
+
+    &::-moz-placeholder 
+    {
+        @content;
+    } 
+
+    
+    
+}

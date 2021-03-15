@@ -1,10 +1,10 @@
 {
     "version": 3,
-    "mappings": "ACAA,AAAA,OAAO,CAAC;EACJ,OAAO,EAAC,IAAI;EACZ,wBAAwB;CAE3B",
+    "mappings": "ACAA,AAAA,OAAO,CAAC;EACJ,OAAO,EAAC,IAAI;EACZ,wBAAwB;CAE3B;;ACJD,AAAA,KAAK,CAAC;EAEF,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,cAAc,EAAE,MAAM;CACzB",
     "sources": [
         "../sass/2-layouts/layout-dir.scss",
         "../sass/2-layouts/header.scss",
-        "../sass/2-layouts/main.scss"
+        "../sass/2-layouts/_main.scss"
     ],
     "names": [],
     "file": "layout-dir.css"

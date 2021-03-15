@@ -1,8 +1,12 @@
-//MIXINS
-@import "./mixins";
+
 
 //VARIABLES
 @import "./variable";
+
+//MIXINS
+@import "./mixinsglobal";
+@import "./mixinsflex";
+
 
 //BASE
 @import "1-base/base-dir";

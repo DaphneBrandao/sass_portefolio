@@ -1,9 +1,28 @@
+/*@mixin font-size ($sizeValue: 1.6) {
+    font-size: ($sizeValue * 10) + px;
+    font-size: $sizeValue + rem;
+}*/
 html {
   height: 100%;
 }
 
 body {
+  max-width: 1000px;
   background-color: grey;
+  font-family: "Segoe UI Light", "Segoe WPC", "Segoe UI", Helvetica, Arial, "Arial Unicode MS", Sans-Serif;
+}
+
+h1 {
+  font-weight: 100;
+  color: #ffff;
+  font-size: 1.5rem;
+  margin-top: 23px 23px 9px 23px;
+}
+
+p {
+  font-weight: 100;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.87);
 }
 
 .header {
@@ -11,16 +30,115 @@ body {
   /*@include flexHeader;*/
 }
 
-.main-content {
-  display: -webkit-box;
+.main {
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  background-color: indigo;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+.main-content {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -moz-justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-box-items: center;
+  align-items: center;
+}
+
+.main-content else {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+}
+
+.logo {
+  width: 132px;
+  height: 42px;
+  margin: 40px 94px 26px 94px;
+}
+
+.content {
+  width: 280px;
+  height: 84px;
+  text-align: center;
+}
+
+.content-tittle {
+  margin-top: 20px;
+}
+
+.content-form {
+  width: 280px;
+  height: 45px;
+}
+
+.content-form_input {
+  width: 177px;
+  height: 45px;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  position: absolute;
+  border-radius: 8px 0px 0px 8px;
+  border: none;
+  padding-left: 11px;
+}
+
+button {
+  display: inline;
+  margin-left: 188px;
+  width: 92px;
+  height: 47px;
+  border-radius: 0px 8px 8px 0px;
+  border: none;
+  background-color: tomato;
+  color: #ffff;
+  letter-spacing: 2.8px;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+input::-webkit-input-placeholder {
+  font-weight: 300;
+  font-size: 1rem;
+  color: red;
+}
+
+input:-moz-placeholder {
+  font-weight: 300;
+  font-size: 1rem;
+  color: red;
+}
+
+input:-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 1rem;
+  color: red;
+}
+
+input::-moz-placeholder {
+  font-weight: 300;
+  font-size: 1rem;
+  color: red;
 }
 /*# sourceMappingURL=app.css.map */

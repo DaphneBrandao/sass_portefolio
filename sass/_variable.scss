@@ -2,16 +2,18 @@
 
 //CONTENT - type features
 $primarytext-color: #ffff;
-$secondarytext-color: rba(255, 255, 255, 0.87);
+$secondarytext-color: rgba(255, 255, 255, 0.87);
+//$secondarytext-color: red;
+$buttoncolor: tomato;
 $placeholder-color: #9fa3a7;
 
-$font-weitghts:(
-    "light": 100,
+$font-weights:(
+    "normal": 100,
     "regular": 300,
 );
 
-$h1: 1rem;
-
+$min-fontsize: 1rem;
+$max-fontsize: 1.5rem;
 $font-family-sans-serif: "Segoe UI Light", "Segoe WPC", "Segoe UI", Helvetica, Arial, "Arial Unicode MS", Sans-Serif;
 
 //BREAKPOINTS
@@ -19,6 +21,7 @@ $font-family-sans-serif: "Segoe UI Light", "Segoe WPC", "Segoe UI", Helvetica, A
 $small: 320px; //mobile
 $medium: 768px; //tablet
 $large: 1280px; //desktop
+
 
 //FLUID TYPE
 
