@@ -1,0 +1,40 @@
+@mixin responsive($media)
+{
+    @if $media == phone 
+    {
+        @media only screen and (max-width: $small) 
+        {
+            @content;
+        }
+    }   
+        @else if $media == tablet
+    {
+        @media only screen and (min-width: $medium)
+        {
+            @content;
+        }
+    } 
+        @else if $media == desktop
+
+    {
+        @media only screen and (min-width: $large)
+    { 
+        @content;
+    }
+    }
+}
+
+//IMAGES
+
+@mixin responsiveFont ($minFont, $difFont, $smallVw, $largeVw) {
+
+    font-size: calc(#{$minFont} + #{$difFont} * ((100vw - #{$smallVw}) / #{$largeVw}));
+
+    @media (max-width: $smallVw) {
+        font-size: $minFont;        
+    }
+    @media (min-width: round($smallVw + $largeVw)) {
+        font-size: round($minFont + $difFont);
+    }
+}
+   

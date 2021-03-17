@@ -1,0 +1,28 @@
+.header {
+  display:none;
+
+  @include responsive (desktop) 
+  {
+    @include flex;
+    @include justify-content(flex-end);
+    height: 72px;
+  }
+  
+  &-container_socialmedia 
+  {
+    list-style-type: none;
+    @include flex;
+    @include flex-direction(row);
+  }
+}
+
+
+.email {
+  margin-right: 10px;
+
+}
+
+.twitter {
+  margin-right: 40px;
+
+}

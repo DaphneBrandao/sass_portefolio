@@ -1,33 +1,135 @@
-/*@mixin font-size ($sizeValue: 1.6) {
-    font-size: ($sizeValue * 10) + px;
-    font-size: $sizeValue + rem;
-}*/
+@font-face {
+  font-family: 'Segoe UI Web (West European)';
+  src: url("https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-light.woff2") format("woff2"), url("https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-light.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI Web (West European)';
+  src: url("https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semilight.woff2") format("woff2"), url("https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semilight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
 html {
-  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#203862), to(#4356ad));
+  background: linear-gradient(180deg, #203862 0%, #4356ad 100%);
+  background-repeat: no-repeat;
 }
 
 body {
-  max-width: 1000px;
-  background-color: grey;
-  font-family: "Segoe UI Light", "Segoe WPC", "Segoe UI", Helvetica, Arial, "Arial Unicode MS", Sans-Serif;
+  height: 759px;
+  font-family: 'Segoe UI Local', 'Segoe UI Web (West European)';
 }
 
 h1 {
   font-weight: 100;
   color: #ffff;
-  font-size: 1.5rem;
-  margin-top: 23px 23px 9px 23px;
+  font-size: calc(24px + 24 * ((100vw - 320px) / 960));
+}
+
+@media (max-width: 320px) {
+  h1 {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1280px) {
+  h1 {
+    font-size: 48px;
+  }
 }
 
 p {
-  font-weight: 100;
+  font-weight: 300;
   font-size: 1rem;
-  color: rgba(255, 255, 255, 0.87);
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 48px;
+  font-size: calc(16px + 8 * ((100vw - 320px) / 960));
+}
+
+@media (max-width: 320px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1280px) {
+  p {
+    font-size: 24px;
+  }
+}
+
+input::-webkit-input-placeholder {
+  font-weight: 300;
+  font-size: 1rem;
+  color: red;
+}
+
+input:-moz-placeholder {
+  font-weight: 300;
+  font-size: 1rem;
+  color: red;
+}
+
+input:-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 1rem;
+  color: red;
+}
+
+input::-moz-placeholder {
+  font-weight: 300;
+  font-size: 1rem;
+  color: red;
 }
 
 .header {
   display: none;
-  /*@include flexHeader;*/
+}
+
+@media only screen and (min-width: 1280px) {
+  .header {
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-box;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    -moz-justify-content: flex-end;
+    justify-content: flex-end;
+    height: 72px;
+  }
+  .header else {
+    -webkit-box-pack: flex-end;
+    -ms-flex-pack: flex-end;
+  }
+}
+
+.header-container_socialmedia {
+  list-style-type: none;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.email {
+  margin-right: 10px;
+}
+
+.twitter {
+  margin-right: 40px;
 }
 
 .main {
@@ -68,10 +170,49 @@ p {
   -ms-flex-pack: center;
 }
 
-.logo {
+@media only screen and (min-width: 1280px) {
+  .main-content {
+    width: 645px;
+    height: 116px;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-box;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -moz-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    -moz-box-items: flex-start;
+    align-items: flex-start;
+    margin: 164px 0px 0px  167px;
+  }
+  .main-content else {
+    -webkit-box-pack: flex-start;
+    -ms-flex-pack: flex-start;
+  }
+}
+
+.main-content_logo {
   width: 132px;
   height: 42px;
-  margin: 40px 94px 26px 94px;
+  margin: 40px 94px 0px 94px;
+}
+
+@media only screen and (min-width: 1280px) {
+  .main-content_logo {
+    margin: 0px 0px 0px 0px;
+    position: absolute;
+  }
 }
 
 .content {
@@ -80,8 +221,76 @@ p {
   text-align: center;
 }
 
-.content-tittle {
-  margin-top: 20px;
+@media only screen and (min-width: 768px) {
+  .content {
+    width: 380px;
+    height: 84px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .content {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.content-title {
+  margin-top: 25px;
+}
+
+@media only screen and (min-width: 1280px) {
+  .content-title {
+    margin-top: 71px;
+    margin-bottom: 29px;
+  }
+}
+
+.iphoneimage {
+  width: 221px;
+  height: 184px;
+  margin-top: 26px;
+}
+
+@media only screen and (min-width: 1280px) {
+  .iphoneimage {
+    display: none;
+  }
+}
+
+.iphoneimage-mobile {
+  width: 197px;
+  height: 167px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0px 11px 0px 12px;
+}
+
+@media only screen and (min-width: 1280px) {
+  .iphoneimage-mobile {
+    -o-object-fit: none;
+       object-fit: none;
+  }
+}
+
+.iphoneimage-desktop {
+  display: none;
+}
+
+@media only screen and (min-width: 1280px) {
+  .iphoneimage-desktop {
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-box;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    width: 374px;
+    height: 732px;
+    margin: 74px 0px 0px 274px;
+    -webkit-transform: translate(-25px, -25px);
+            transform: translate(-25px, -25px);
+  }
 }
 
 .content-form {
@@ -104,7 +313,7 @@ p {
   padding-left: 11px;
 }
 
-button {
+.content-form_button {
   display: inline;
   margin-left: 188px;
   width: 92px;
@@ -116,29 +325,5 @@ button {
   letter-spacing: 2.8px;
   font-weight: 700;
   font-size: 0.875rem;
-}
-
-input::-webkit-input-placeholder {
-  font-weight: 300;
-  font-size: 1rem;
-  color: red;
-}
-
-input:-moz-placeholder {
-  font-weight: 300;
-  font-size: 1rem;
-  color: red;
-}
-
-input:-ms-input-placeholder {
-  font-weight: 300;
-  font-size: 1rem;
-  color: red;
-}
-
-input::-moz-placeholder {
-  font-weight: 300;
-  font-size: 1rem;
-  color: red;
 }
 /*# sourceMappingURL=app.css.map */

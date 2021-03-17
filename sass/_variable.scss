@@ -2,7 +2,7 @@
 
 //CONTENT - type features
 $primarytext-color: #ffff;
-$secondarytext-color: rgba(255, 255, 255, 0.87);
+$secondarytext-color: rgba(255, 255, 255, 0.60);
 //$secondarytext-color: red;
 $buttoncolor: tomato;
 $placeholder-color: #9fa3a7;
@@ -12,9 +12,10 @@ $font-weights:(
     "regular": 300,
 );
 
-$min-fontsize: 1rem;
-$max-fontsize: 1.5rem;
-$font-family-sans-serif: "Segoe UI Light", "Segoe WPC", "Segoe UI", Helvetica, Arial, "Arial Unicode MS", Sans-Serif;
+
+//$minFont: 1rem;
+//$maxFont: 1.5rem;
+$fontName: "Segoe UI Light", "Segoe WPC", "Segoe UI", Helvetica, Arial, "Arial Unicode MS", Sans-Serif;
 
 //BREAKPOINTS
 
@@ -25,6 +26,8 @@ $large: 1280px; //desktop
 
 //FLUID TYPE
 
-//BGD
+//BGDxzq1   
+$startBlue: rgba(32,56,98,1);
+$endBlue: rgba(67,86,173,1); 
 
-$background-color: grey;
+$list: $startBlue 0%, $endBlue 100%;
