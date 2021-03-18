@@ -1,7 +1,10 @@
 .content-form { 
     @include size(280px, 45px);
+  // @include resposiveRatio;
     //RESPONSIVE DESKTOP
+    @include responsive(desktop) {
     @include size (400px,55px);
+    }
 
     &_input 
     {
@@ -21,17 +24,22 @@
         color: $placeholder-color;
         }
 
+     @include responsive(tablet) {
+            @include size(278px, 55px);
+
+        } 
         @include responsive(desktop) {
             @include size(278px, 55px);
-            
+
         }
+        
     }
 
     &_button {
         @include size(92px, 47px);
 
         display: inline;
-        margin-left: 188px;
+        margin-left: 177px;
         border-radius: 0px 8px 8px 0px;
         border: none;
         background-color:$buttoncolor;
@@ -40,9 +48,15 @@
         font-weight: 700;
         font-size: 0.875rem;
 
+        
+
         //RESPONSIVE DESKTOP
-        @include size(122px,57px);
-        margin-left: 290px;
+        @include responsive (tablet) {
+            
+            @include size(122px,57px);
+            margin-left: 290px;
+    
+        }
         
     }
 }

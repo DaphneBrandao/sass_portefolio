@@ -13,16 +13,15 @@
 }
 
 html {
+  height: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(#203862), to(#4356ad));
   background: linear-gradient(180deg, #203862 0%, #4356ad 100%);
-  width: 100%;
-  height: auto;
   background-repeat: no-repeat;
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1024px) {
   html {
-    background-size: 100% 85%;
+    background-size: 100% 800px;
   }
 }
 
@@ -33,7 +32,7 @@ body {
 h1 {
   font-weight: 100;
   color: #ffff;
-  font-size: calc(24px + 24 * ((100vw - 320px) / 960));
+  font-size: calc(24px + 24 * ((100vw - 320px) / 1024));
   line-height: 1.21;
   letter-spacing: normal;
   font-stretch: normal;
@@ -45,14 +44,14 @@ h1 {
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1344px) {
   h1 {
     font-size: 48px;
   }
 }
 
 p {
-  font-size: calc(16px + 8 * ((100vw - 320px) / 960));
+  font-size: calc(16px + 8 * ((100vw - 320px) / 1024));
   font-weight: 300;
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.6);
@@ -65,7 +64,7 @@ p {
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1344px) {
   p {
     font-size: 24px;
   }
@@ -75,7 +74,7 @@ p {
   display: none;
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1024px) {
   .header {
     display: -ms-flexbox;
     display: flex;
@@ -156,7 +155,7 @@ p {
   -ms-flex-pack: center;
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1024px) {
   .main-container {
     width: 645px;
     height: 116px;
@@ -194,7 +193,7 @@ p {
   margin: 40px 94px 0px 94px;
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1024px) {
   .main-container_logo {
     margin: 0px 0px 0px 0px;
     position: absolute;
@@ -207,21 +206,21 @@ p {
   margin-top: 26px;
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1024px) {
   .iphoneimage {
     display: none;
   }
 }
 
 .iphoneimage-mobile {
-  width: 197px;
-  height: 167px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin: 0px 11px 0px 12px;
+  width: 198px;
+  height: 184px;
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1024px) {
   .iphoneimage-mobile {
     -o-object-fit: none;
        object-fit: none;
@@ -249,15 +248,10 @@ p {
     -moz-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    -moz-box-items: center;
-    align-items: center;
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1024px) {
   .content {
     width: 100%;
     text-align: left;
@@ -285,7 +279,7 @@ p {
   vertical-align: middle;
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1024px) {
   .content-title {
     margin-top: 71px;
     margin-bottom: 29px;
@@ -296,7 +290,7 @@ p {
   display: none;
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1024px) {
   .iphoneimage-desktop {
     display: -ms-flexbox;
     display: flex;
@@ -315,8 +309,13 @@ p {
 .content-form {
   width: 280px;
   height: 45px;
-  width: 400px;
-  height: 55px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .content-form {
+    width: 400px;
+    height: 55px;
+  }
 }
 
 .content-form_input {
@@ -406,7 +405,14 @@ p {
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 768px) {
+  .content-form_input {
+    width: 278px;
+    height: 55px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
   .content-form_input {
     width: 278px;
     height: 55px;
@@ -417,7 +423,7 @@ p {
   width: 92px;
   height: 47px;
   display: inline;
-  margin-left: 188px;
+  margin-left: 177px;
   border-radius: 0px 8px 8px 0px;
   border: none;
   background-color: tomato;
@@ -425,8 +431,13 @@ p {
   letter-spacing: 2.8px;
   font-weight: 700;
   font-size: 0.875rem;
-  width: 122px;
-  height: 57px;
-  margin-left: 290px;
+}
+
+@media only screen and (min-width: 768px) {
+  .content-form_button {
+    width: 122px;
+    height: 57px;
+    margin-left: 290px;
+  }
 }
 /*# sourceMappingURL=app.css.map */

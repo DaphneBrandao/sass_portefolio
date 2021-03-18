@@ -4,6 +4,7 @@
     
     &-container {
         width: 100%;
+      
         @include flex;
         @include flex-direction(column);
         @include justify-content(center);
@@ -39,7 +40,8 @@
 .iphoneimage {
     @include size(221px, 184px);
     margin-top: 26px; 
-
+   
+    
       //RESPONSIVE DESKTOP
       @include responsive (desktop) 
       {
@@ -48,9 +50,11 @@
   
       &-mobile 
         {
-          @include size(197px, 167px);
-          object-fit: cover;
-          margin: 0px 11px 0px 12px;
+            //@include resposiveBox(1,1);
+            
+            object-fit: contain;
+            margin: 0px 11px 0px 12px;
+            @include size(198px, 184px);
 
             //RESPONSIVE DESKTOP
             @include responsive(desktop) 
@@ -71,7 +75,6 @@
         @include size(380px, 84px);
         @include flex;
         @include flex-direction(column);
-        @include align-items(center);
     }
     //RESPONSIVE DESKTOP
     @include responsive (desktop) 
