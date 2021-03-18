@@ -24,7 +24,7 @@
     }
 }
 
-//IMAGES
+//FLUID-TYPE
 
 @mixin responsiveFont ($minFont, $difFont, $smallVw, $largeVw) {
 
@@ -37,4 +37,4 @@
         font-size: round($minFont + $difFont);
     }
 }
-   
+

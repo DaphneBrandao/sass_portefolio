@@ -16,10 +16,17 @@ html {
   background: -webkit-gradient(linear, left top, left bottom, from(#203862), to(#4356ad));
   background: linear-gradient(180deg, #203862 0%, #4356ad 100%);
   background-repeat: no-repeat;
+  height: 100%;
+}
+
+@media only screen and (min-width: 1280px) {
+  html {
+    height: 88%;
+  }
 }
 
 body {
-  height: 759px;
+  width: 100%;
   font-family: 'Segoe UI Local', 'Segoe UI Web (West European)';
 }
 
@@ -27,6 +34,9 @@ h1 {
   font-weight: 100;
   color: #ffff;
   font-size: calc(24px + 24 * ((100vw - 320px) / 960));
+  line-height: 1.21;
+  letter-spacing: normal;
+  font-stretch: normal;
 }
 
 @media (max-width: 320px) {
@@ -42,11 +52,11 @@ h1 {
 }
 
 p {
+  font-size: calc(16px + 8 * ((100vw - 320px) / 960));
   font-weight: 300;
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 48px;
-  font-size: calc(16px + 8 * ((100vw - 320px) / 960));
 }
 
 @media (max-width: 320px) {
@@ -59,30 +69,6 @@ p {
   p {
     font-size: 24px;
   }
-}
-
-input::-webkit-input-placeholder {
-  font-weight: 300;
-  font-size: 1rem;
-  color: red;
-}
-
-input:-moz-placeholder {
-  font-weight: 300;
-  font-size: 1rem;
-  color: red;
-}
-
-input:-ms-input-placeholder {
-  font-weight: 300;
-  font-size: 1rem;
-  color: red;
-}
-
-input::-moz-placeholder {
-  font-weight: 300;
-  font-size: 1rem;
-  color: red;
 }
 
 .header {
@@ -110,7 +96,6 @@ input::-moz-placeholder {
 }
 
 .header-container_socialmedia {
-  list-style-type: none;
   display: -ms-flexbox;
   display: flex;
   display: -webkit-box;
@@ -122,6 +107,7 @@ input::-moz-placeholder {
   -moz-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  list-style-type: none;
 }
 
 .email {
@@ -141,7 +127,7 @@ input::-moz-placeholder {
   display: flex;
 }
 
-.main-content {
+.main-container {
   width: 100%;
   display: -ms-flexbox;
   display: flex;
@@ -165,13 +151,13 @@ input::-moz-placeholder {
   align-items: center;
 }
 
-.main-content else {
+.main-container else {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
 }
 
 @media only screen and (min-width: 1280px) {
-  .main-content {
+  .main-container {
     width: 645px;
     height: 116px;
     display: -ms-flexbox;
@@ -194,55 +180,24 @@ input::-moz-placeholder {
     -webkit-align-items: flex-start;
     -moz-box-items: flex-start;
     align-items: flex-start;
-    margin: 164px 0px 0px  167px;
+    margin: 164px 0px 0px 167px;
   }
-  .main-content else {
+  .main-container else {
     -webkit-box-pack: flex-start;
     -ms-flex-pack: flex-start;
   }
 }
 
-.main-content_logo {
+.main-container_logo {
   width: 132px;
   height: 42px;
   margin: 40px 94px 0px 94px;
 }
 
 @media only screen and (min-width: 1280px) {
-  .main-content_logo {
+  .main-container_logo {
     margin: 0px 0px 0px 0px;
     position: absolute;
-  }
-}
-
-.content {
-  width: 280px;
-  height: 84px;
-  text-align: center;
-}
-
-@media only screen and (min-width: 768px) {
-  .content {
-    width: 380px;
-    height: 84px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .content {
-    width: 100%;
-    text-align: left;
-  }
-}
-
-.content-title {
-  margin-top: 25px;
-}
-
-@media only screen and (min-width: 1280px) {
-  .content-title {
-    margin-top: 71px;
-    margin-bottom: 29px;
   }
 }
 
@@ -270,6 +225,70 @@ input::-moz-placeholder {
   .iphoneimage-mobile {
     -o-object-fit: none;
        object-fit: none;
+  }
+}
+
+.content {
+  width: 280px;
+  height: 84px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .content {
+    width: 380px;
+    height: 84px;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-box;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-box-items: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .content {
+    width: 100%;
+    text-align: left;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-box;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    -moz-box-items: flex-start;
+    align-items: flex-start;
+  }
+}
+
+.content-title {
+  margin-top: 25px;
+  vertical-align: middle;
+}
+
+@media only screen and (min-width: 1280px) {
+  .content-title {
+    margin-top: 71px;
+    margin-bottom: 29px;
   }
 }
 
@@ -313,11 +332,83 @@ input::-moz-placeholder {
   padding-left: 11px;
 }
 
+.content-form_input::-webkit-input-placeholder {
+  font-size: calc(16px + 4 * ((100vw - 320px) / 1280px));
+  font-weight: 300;
+  color: #9fa3a7;
+}
+
+@media (max-width: 320px) {
+  .content-form_input::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .content-form_input::-webkit-input-placeholder {
+    font-size: 20px;
+  }
+}
+
+.content-form_input:-moz-placeholder {
+  font-size: calc(16px + 4 * ((100vw - 320px) / 1280px));
+  font-weight: 300;
+  color: #9fa3a7;
+}
+
+@media (max-width: 320px) {
+  .content-form_input:-moz-placeholder {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .content-form_input:-moz-placeholder {
+    font-size: 20px;
+  }
+}
+
+.content-form_input:-ms-input-placeholder {
+  font-size: calc(16px + 4 * ((100vw - 320px) / 1280px));
+  font-weight: 300;
+  color: #9fa3a7;
+}
+
+@media (max-width: 320px) {
+  .content-form_input:-ms-input-placeholder {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .content-form_input:-ms-input-placeholder {
+    font-size: 20px;
+  }
+}
+
+.content-form_input::-moz-placeholder {
+  font-size: calc(16px + 4 * ((100vw - 320px) / 1280px));
+  font-weight: 300;
+  color: #9fa3a7;
+}
+
+@media (max-width: 320px) {
+  .content-form_input::-moz-placeholder {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .content-form_input::-moz-placeholder {
+    font-size: 20px;
+  }
+}
+
 .content-form_button {
-  display: inline;
-  margin-left: 188px;
   width: 92px;
   height: 47px;
+  display: inline;
+  margin-left: 188px;
   border-radius: 0px 8px 8px 0px;
   border: none;
   background-color: tomato;

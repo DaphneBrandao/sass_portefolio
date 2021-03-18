@@ -1,14 +1,15 @@
+
 .main {
     @include flex;
- 
-    &-content {
+    
+    &-container {
         width: 100%;
         @include flex;
         @include flex-direction(column);
         @include justify-content(center);
         @include align-items(center);
         
-        //RESPONSIVE
+        //RESPONSIVE DESKTOP
         @include responsive(desktop)
         {
             @include size (645px, 116px);
@@ -16,13 +17,12 @@
             @include flex-direction(column);
             @include justify-content(flex-start);
             @include align-items(flex-start);
-            margin: 164px 0px 0px  167px;
+            margin: 164px 0px 0px 167px;
         }
 
         &_logo 
         {
-            width: 132px;
-            height: 42px;
+            @include size(132px, 42px);
             margin: 40px 94px 0px 94px;
             
             //RESPONSIVE
@@ -32,30 +32,61 @@
             position: absolute;
             }
         }
+        
     }
 }
 
+.iphoneimage {
+    @include size(221px, 184px);
+    margin-top: 26px; 
+
+      //RESPONSIVE DESKTOP
+      @include responsive (desktop) 
+      {
+      display: none; 
+      }
+  
+      &-mobile 
+        {
+          @include size(197px, 167px);
+          object-fit: cover;
+          margin: 0px 11px 0px 12px;
+
+            //RESPONSIVE DESKTOP
+            @include responsive(desktop) 
+            {
+                object-fit: none;
+            }
+        }
+}
 
 
 .content {
     @include size(280px, 84px);
     text-align: center;
-   
-    //RESPONSIVE
+
+    //RESPONSIVE TABLET
     @include responsive (tablet) 
     {
         @include size(380px, 84px);
+        @include flex;
+        @include flex-direction(column);
+        @include align-items(center);
     }
-
+    //RESPONSIVE DESKTOP
     @include responsive (desktop) 
     {
-    width: 100%;
-    text-align: left;
+        width: 100%;
+        text-align: left;
+        @include flex;
+        @include flex-direction(column);
+        @include align-items(flex-start);
     }
 
     &-title {
         margin-top: 25px;
-    
+        vertical-align: middle;
+        
         //RESPONSIVE
         @include responsive (desktop) 
         {
@@ -65,33 +96,12 @@
     }
 }
 
-
-
-.iphoneimage {
-  @include size(221px, 184px);
-    margin-top: 26px; 
-    @include responsive (desktop) {
-    display: none; 
-    }
-
-    &-mobile {
-        @include size(197px, 167px);
-        object-fit: cover;
-        margin: 0px 11px 0px 12px;
-
-        @include responsive(desktop) {
-        object-fit: none;
-        }
-    }
- 
-}
-
-
 .iphoneimage-desktop {
     display: none;
 
-    @include responsive(desktop) {
-        
+    //RESPOSIVE DESKTOP
+    @include responsive(desktop) 
+    {
         @include flex;
         @include size (374px, 732px);
         margin: 74px 0px 0px 274px;

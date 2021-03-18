@@ -1,14 +1,18 @@
 html {
-    //height: 100%; 
     @include linearGradient(180deg, $list); 
     background-repeat: no-repeat;
+    height: 100%;
+    
+    @include responsive (desktop) {
+        height: 88%;
+    }
+   
 }
 
 
 body {
-    //font-family: $font-family-sans-serif;
-    height: 759px;
-    font-family: 'Segoe UI Local', 'Segoe UI Web (West European)'
+    width: 100%;
+    font-family: 'Segoe UI Local', 'Segoe UI Web (West European)';
 }
 
 
@@ -16,22 +20,16 @@ h1 {
     font-weight: 100;
     color: $primarytext-color;
     @include responsiveFont(24px, 24, 320px, 960); 
+    line-height: 1.21;
+    letter-spacing: normal;
+    font-stretch: normal;
 }
 
 p {
+    @include responsiveFont(16px, 8, 320px, 960);
     font-weight: 300;
     font-size: 1rem;
     color: $secondarytext-color;
     margin-bottom: 48px;
-    @include responsiveFont(16px, 8, 320px, 960);
 }
 
-input {
-
-    @include placeholder 
-    {
-        font-weight: 300;
-        font-size: 1rem;
-        color: red;
-    }
-}
