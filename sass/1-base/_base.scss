@@ -1,17 +1,21 @@
 html {
+   
+   
+    //height: 100%;
     @include linearGradient(180deg, $list); 
+    width: 100% ;
+    height: auto;
     background-repeat: no-repeat;
-    height: 100%;
-    
     @include responsive (desktop) {
-        height: 88%;
+        //height: 88%;
+        background-size: 100% 85%;
     }
    
 }
 
 
 body {
-    width: 100%;
+ 
     font-family: 'Segoe UI Local', 'Segoe UI Web (West European)';
 }
 

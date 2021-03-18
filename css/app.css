@@ -15,18 +15,18 @@
 html {
   background: -webkit-gradient(linear, left top, left bottom, from(#203862), to(#4356ad));
   background: linear-gradient(180deg, #203862 0%, #4356ad 100%);
+  width: 100%;
+  height: auto;
   background-repeat: no-repeat;
-  height: 100%;
 }
 
 @media only screen and (min-width: 1280px) {
   html {
-    height: 88%;
+    background-size: 100% 85%;
   }
 }
 
 body {
-  width: 100%;
   font-family: 'Segoe UI Local', 'Segoe UI Web (West European)';
 }
 
@@ -315,6 +315,8 @@ p {
 .content-form {
   width: 280px;
   height: 45px;
+  width: 400px;
+  height: 55px;
 }
 
 .content-form_input {
@@ -333,7 +335,7 @@ p {
 }
 
 .content-form_input::-webkit-input-placeholder {
-  font-size: calc(16px + 4 * ((100vw - 320px) / 1280px));
+  font-size: calc(16px + 4 * ((100vw - 320px) / 1024px));
   font-weight: 300;
   color: #9fa3a7;
 }
@@ -344,14 +346,14 @@ p {
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1344px) {
   .content-form_input::-webkit-input-placeholder {
     font-size: 20px;
   }
 }
 
 .content-form_input:-moz-placeholder {
-  font-size: calc(16px + 4 * ((100vw - 320px) / 1280px));
+  font-size: calc(16px + 4 * ((100vw - 320px) / 1024px));
   font-weight: 300;
   color: #9fa3a7;
 }
@@ -362,14 +364,14 @@ p {
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1344px) {
   .content-form_input:-moz-placeholder {
     font-size: 20px;
   }
 }
 
 .content-form_input:-ms-input-placeholder {
-  font-size: calc(16px + 4 * ((100vw - 320px) / 1280px));
+  font-size: calc(16px + 4 * ((100vw - 320px) / 1024px));
   font-weight: 300;
   color: #9fa3a7;
 }
@@ -380,14 +382,14 @@ p {
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1344px) {
   .content-form_input:-ms-input-placeholder {
     font-size: 20px;
   }
 }
 
 .content-form_input::-moz-placeholder {
-  font-size: calc(16px + 4 * ((100vw - 320px) / 1280px));
+  font-size: calc(16px + 4 * ((100vw - 320px) / 1024px));
   font-weight: 300;
   color: #9fa3a7;
 }
@@ -398,9 +400,16 @@ p {
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1344px) {
   .content-form_input::-moz-placeholder {
     font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .content-form_input {
+    width: 278px;
+    height: 55px;
   }
 }
 
@@ -416,5 +425,8 @@ p {
   letter-spacing: 2.8px;
   font-weight: 700;
   font-size: 0.875rem;
+  width: 122px;
+  height: 57px;
+  margin-left: 290px;
 }
 /*# sourceMappingURL=app.css.map */
