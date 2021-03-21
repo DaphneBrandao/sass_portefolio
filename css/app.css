@@ -19,7 +19,7 @@ html {
   background-repeat: no-repeat;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 980px) {
   html {
     background-size: 100% 800px;
   }
@@ -32,7 +32,7 @@ body {
 h1 {
   font-weight: 100;
   color: #ffff;
-  font-size: calc(24px + 24 * ((100vw - 320px) / 1024));
+  font-size: calc(24px + 24 * ((100vw - 320px) / 980));
   line-height: 1.21;
   letter-spacing: normal;
   font-stretch: normal;
@@ -44,14 +44,14 @@ h1 {
   }
 }
 
-@media (min-width: 1344px) {
+@media (min-width: 1300px) {
   h1 {
     font-size: 48px;
   }
 }
 
 p {
-  font-size: calc(16px + 8 * ((100vw - 320px) / 1024));
+  font-size: calc(16px + 8 * ((100vw - 320px) / 980));
   font-weight: 300;
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.6);
@@ -64,7 +64,7 @@ p {
   }
 }
 
-@media (min-width: 1344px) {
+@media (min-width: 1300px) {
   p {
     font-size: 24px;
   }
@@ -74,7 +74,7 @@ p {
   display: none;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 980px) {
   .header {
     display: -ms-flexbox;
     display: flex;
@@ -155,7 +155,7 @@ p {
   -ms-flex-pack: center;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 980px) {
   .main-container {
     width: 645px;
     height: 116px;
@@ -180,6 +180,7 @@ p {
     -moz-box-items: flex-start;
     align-items: flex-start;
     margin: 164px 0px 0px 167px;
+    padding: 20px 20px 20px 20px;
   }
   .main-container else {
     -webkit-box-pack: flex-start;
@@ -193,7 +194,7 @@ p {
   margin: 40px 94px 0px 94px;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 980px) {
   .main-container_logo {
     margin: 0px 0px 0px 0px;
     position: absolute;
@@ -206,7 +207,7 @@ p {
   margin-top: 26px;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 980px) {
   .iphoneimage {
     display: none;
   }
@@ -220,7 +221,7 @@ p {
   height: 184px;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 980px) {
   .iphoneimage-mobile {
     -o-object-fit: none;
        object-fit: none;
@@ -251,7 +252,7 @@ p {
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 980px) {
   .content {
     width: 100%;
     text-align: left;
@@ -279,19 +280,19 @@ p {
   vertical-align: middle;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 980px) {
   .content-title {
     margin-top: 71px;
     margin-bottom: 29px;
   }
 }
 
-.iphoneimage-desktop {
+.iphoneimg-container {
   display: none;
 }
 
-@media only screen and (min-width: 1024px) {
-  .iphoneimage-desktop {
+@media only screen and (min-width: 980px) {
+  .iphoneimg-container {
     display: -ms-flexbox;
     display: flex;
     display: -webkit-box;
@@ -300,10 +301,23 @@ p {
     display: flex;
     width: 374px;
     height: 732px;
-    margin: 74px 0px 0px 274px;
-    -webkit-transform: translate(-25px, -25px);
-            transform: translate(-25px, -25px);
+    height: 0;
+    padding-bottom: 56.25%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
   }
+}
+
+.iphoneimg-container_dk {
+  background: hotpink;
+  height: auto;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  z-index: 2;
 }
 
 .content-form {
@@ -311,7 +325,7 @@ p {
   height: 45px;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 980px) {
   .content-form {
     width: 400px;
     height: 55px;
@@ -412,7 +426,7 @@ p {
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 980px) {
   .content-form_input {
     width: 278px;
     height: 55px;

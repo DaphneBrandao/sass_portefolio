@@ -10,7 +10,7 @@ $placeholder-color: #9fa3a7;
 
 $small: 320px; //mobile
 $medium: 768px; //tablet - 768
-$large: 1024px; //desktop
+$large: 980px; //desktop
 
 
 
@@ -19,3 +19,9 @@ $startBlue: rgba(32,56,98,1);
 $endBlue: rgba(67,86,173,1); 
 
 $list: $startBlue 0%, $endBlue 100%;
+
+//image
+$margin: 20px;
+$aspect-width: 8;
+$aspect-height: 3;
+$constant: ($margin * $aspect-width) / ($aspect-height * 3);

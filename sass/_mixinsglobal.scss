@@ -64,3 +64,17 @@
 
 
 
+//FLUID-TYPE
+
+@mixin responsiveFont ($minFont, $difFont, $smallVw, $largeVw) {
+
+    font-size: calc(#{$minFont} + #{$difFont} * ((100vw - #{$smallVw}) / #{$largeVw}));
+
+    @media (max-width: $smallVw) {
+        font-size: $minFont;        
+    }
+    @media (min-width: round($smallVw + $largeVw)) {
+        font-size: round($minFont + $difFont);
+    }
+}
+

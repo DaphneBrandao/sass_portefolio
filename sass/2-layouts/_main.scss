@@ -1,6 +1,8 @@
 
 .main {
     @include flex;
+   
+
     
     &-container {
         width: 100%;
@@ -19,6 +21,7 @@
             @include justify-content(flex-start);
             @include align-items(flex-start);
             margin: 164px 0px 0px 167px;
+            padding: 20px 20px 20px 20px;
         }
 
         &_logo 
@@ -99,15 +102,34 @@
     }
 }
 
-.iphoneimage-desktop {
+.iphoneimg-container {
     display: none;
 
     //RESPOSIVE DESKTOP
     @include responsive(desktop) 
     {
+     
         @include flex;
         @include size (374px, 732px);
-        margin: 74px 0px 0px 274px;
-        transform: translate(-25px, -25px);
+       margin: 74px 0px 0px 274px;
+     
+      //  transform: translate(-25px, -25px);
+         
+
+       
+        @include maintain-ratio( 16 9 ); // 56.25%
+        overflow: hidden;
+       
+        z-index: 1;
+    }
+    
+    &_dk {
+      
+       background: hotpink;
+       height: auto;
+     
+       width: 100%;
+       z-index: 2;
+        
     }
 }

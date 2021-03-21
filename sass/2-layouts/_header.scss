@@ -1,11 +1,13 @@
 .header {
   display:none;
+  
 
   @include responsive (desktop) 
   {
     @include flex;
     @include justify-content(flex-end);
     height: 72px;
+    
   }
   
   &-container_socialmedia 

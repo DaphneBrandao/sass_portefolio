@@ -4,11 +4,7 @@
 @import "./variable";
 
 //MIXINS
-@import "./mixinsglobal";
-@import "./mixinsflex";
-
-//MEDIAQUERIES
-@import "./mediaqueries";
+@import "./mixinsglobal" , "./mixinsflex" , "./mediaqueries";
 
 //BASE
 @import "1-base/base-dir";

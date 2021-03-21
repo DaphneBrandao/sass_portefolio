@@ -24,17 +24,13 @@
     }
 }
 
-//FLUID-TYPE
-
-@mixin responsiveFont ($minFont, $difFont, $smallVw, $largeVw) {
-
-    font-size: calc(#{$minFont} + #{$difFont} * ((100vw - #{$smallVw}) / #{$largeVw}));
-
-    @media (max-width: $smallVw) {
-        font-size: $minFont;        
+@mixin maintain-ratio($ratio: 1 1) {
+    @if length($ratio) < 2 or length($ratio) > 2 {
+      @warn "$ratio must be a list with two values.";
     }
-    @media (min-width: round($smallVw + $largeVw)) {
-        font-size: round($minFont + $difFont);
-    }
-}
+    height: 0;
+    padding-bottom: percentage(nth($ratio, 2) / nth($ratio, 1));
+    width: 100%;
+  }
+
 

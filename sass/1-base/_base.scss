@@ -20,14 +20,14 @@ body {
 h1 {
     font-weight: 100;
     color: $primarytext-color;
-    @include responsiveFont(24px, 24, 320px, 1024); 
+    @include responsiveFont(24px, 24, 320px, 980); 
     line-height: 1.21;
     letter-spacing: normal;
     font-stretch: normal;
 }
 
 p {
-    @include responsiveFont(16px, 8, 320px, 1024);
+    @include responsiveFont(16px, 8, 320px, 980);
     font-weight: 300;
     font-size: 1rem;
     color: $secondarytext-color;
