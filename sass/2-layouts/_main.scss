@@ -1,135 +1,129 @@
+.wrapper {
+    max-width: 1137px; 
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
 
-.main {
-    @include flex;
-   
+.main 
+{  
 
-    
     &-container {
-        width: 100%;
-      
         @include flex;
         @include flex-direction(column);
         @include justify-content(center);
         @include align-items(center);
-        
-        //RESPONSIVE DESKTOP
-        @include responsive(desktop)
-        {
-            @include size (645px, 116px);
-            @include flex;
-            @include flex-direction(column);
-            @include justify-content(flex-start);
-            @include align-items(flex-start);
-            margin: 164px 0px 0px 167px;
-            padding: 20px 20px 20px 20px;
-        }
-
-        &_logo 
-        {
-            @include size(132px, 42px);
-            margin: 40px 94px 0px 94px;
-            
-            //RESPONSIVE
-            @include responsive (desktop) 
-            {
-            margin: 0px 0px 0px 0px;
-            position: absolute;
-            }
-        }
-        
     }
 }
 
+//IMAGE WRAPPER
 .iphoneimage {
-    @include size(221px, 184px);
-    margin-top: 26px; 
-   
-    
-      //RESPONSIVE DESKTOP
-      @include responsive (desktop) 
-      {
-      display: none; 
-      }
-  
-      &-mobile 
-        {
-            //@include resposiveBox(1,1);
-            
-            object-fit: contain;
-            margin: 0px 11px 0px 12px;
-            @include size(198px, 184px);
+    @include size (221px, 194px);
+    order: 2;
+    margin-top: 10px;
 
-            //RESPONSIVE DESKTOP
-            @include responsive(desktop) 
-            {
-                object-fit: none;
-            }
+     //RESPOSIVE DESKTOP - IMAGE
+    @include responsive (desktop)
+    {
+        position: absolute; 
+        top:5%;
+        width: 80%;
+
+    }
+
+    //IMAGE 
+    &-mobile 
+    {
+        @include size (198px, 184px);
+        margin-left: 12px;
+        margin-right: 11px;
+        margin-top: 10px;
+        object-fit: cover;
+        object-position: 0% 0%;
+
+        //RESPOSIVE DESKTOP - IMAGE
+        @include responsive (desktop)
+        {
+            @include size (344px, 702px);
+            object-fit: contain;
         }
+    }
 }
 
 
-.content {
-    @include size(280px, 84px);
-    text-align: center;
-
-    //RESPONSIVE TABLET
-    @include responsive (tablet) 
-    {
-        @include size(380px, 84px);
-        @include flex;
-        @include flex-direction(column);
+//LOGO
+.logo {
+    @include size(132px, 42px);
+    margin-top: 40px;
+    //RESPONSIVE
+    @include responsive(desktop) {
+        @include size(132px, 42px);
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        top: 0;
+        margin-top: 164px;
     }
+}
+
+//CONTENT - MAIN INFO
+.content 
+{
+    @include flex;
+    @include flex-direction(column);
+    @include align-items(center);
+    @include justify-content(center);
+   
+    order:3;
+    
+
     //RESPONSIVE DESKTOP
     @include responsive (desktop) 
     {
-        width: 100%;
-        text-align: left;
         @include flex;
         @include flex-direction(column);
         @include align-items(flex-start);
+        text-align: left;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-top: 235px;
+        margin-left: auto;
+   
     }
+    //TITLE H1
+    &-title 
+    {
 
-    &-title {
-        margin-top: 25px;
-        vertical-align: middle;
+        margin-top: 23px;
+        margin-bottom: 25px;
+        font-weight: 100;
+        text-align: center;
+        max-width: 100%;
         
-        //RESPONSIVE
+        //RESPONSIVE DESKTOP - TITLE
         @include responsive (desktop) 
         {
-            margin-top: 71px;
-            margin-bottom: 29px;
+            @include size (575px, 116px);
+            text-align: left;
+        }
+    }
+    
+    //SUBTITLE - p
+    &-subtitle {
+        text-align: center;
+        margin-bottom: 26px;
+        width: 100%;
+
+         //RESPONSIVE DESKTOP - SUBTITLE
+        @include responsive(desktop) 
+        {
+            @include size(520px, 48px);
+            text-align: left;
+            width: 80%;
         }
     }
 }
 
-.iphoneimg-container {
-    display: none;
 
-    //RESPOSIVE DESKTOP
-    @include responsive(desktop) 
-    {
-     
-        @include flex;
-        @include size (354px, 712px);
-       margin: 74px 0px 0px 274px;
-     
-      //  transform: translate(-25px, -25px);
-         
-
-       
-        @include maintain-ratio( 16 9 ); // 56.25%
-        overflow: hidden;
-       
-        z-index: 1;
-    }
-    
-    &_dk {
-      
-       background: hotpink;
-       height: auto;
-     
-       width: 100%;
-       z-index: 2;
-        
-    }
-}

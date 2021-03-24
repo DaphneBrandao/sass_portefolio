@@ -1,28 +1,31 @@
-.header {
+.header 
+{
   display:none;
-  
 
+  //RESPOSIVE DESKTOP - HEADER
   @include responsive (desktop) 
   {
     @include flex;
     @include justify-content(flex-end);
-    height: 72px;
-    
+   
   }
-  
+
+  //SOCIAL MEDIA ICON CONTAINER
   &-container_socialmedia 
   {
     @include flex;
     @include flex-direction(row);
-
     list-style-type: none;
+    height: 72px; 
   }
 }
 
+//ICON EMAIL
 .email {
   margin-right: 10px;
 }
 
+//ICON TWITTER
 .twitter {
   margin-right: 40px;
 }

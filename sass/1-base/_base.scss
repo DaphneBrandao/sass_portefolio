@@ -1,36 +1,47 @@
 html {
-   
-    height: 100%;
     @include linearGradient(180deg, $list); 
     background-repeat: no-repeat;
-    
+    min-height: 100%;
+    min-height: 780px;
+  
+    width: 100%;
+    height: auto;
+
+
     @include responsive (desktop) {
-        background-size: 100% 800px;
+        background-size: 100% 660px;
+            
     }
-   
+
 }
-
-
+    
+   
 body {
     
+    
     font-family: 'Segoe UI Local', 'Segoe UI Web (West European)';
+
 }
+
 
 
 h1 {
-    font-weight: 100;
+    font-weight: 300;
     color: $primarytext-color;
-    @include responsiveFont(24px, 24, 320px, 980); 
+   @include responsiveFont(24px, 24, 320px, 1600); 
     line-height: 1.21;
     letter-spacing: normal;
-    font-stretch: normal;
+    margin: 0;
 }
 
 p {
-    @include responsiveFont(16px, 8, 320px, 980);
-    font-weight: 300;
-    font-size: 1rem;
+    @include responsiveFont(16px, 8, 320px, 1600);
+    font-weight: 100;
+    
     color: $secondarytext-color;
     margin-bottom: 48px;
+    margin: 0;
+    line-height: 1.5;
+    letter-spacing: normal;
 }
 
