@@ -25,6 +25,7 @@
             @include responsive (desktop) 
             {
                 @include size(278px, 55px);
+                margin-top: 48px;
             }
         }
         //BUTTON
@@ -34,7 +35,6 @@
             @include position(absolute, 0, 0);
             display: inline;
             margin-left: 177px;
-           
             background-color:$buttoncolor;
             color: $primarytext-color;
             letter-spacing: 2.8px;
