@@ -9,10 +9,8 @@ html {
 
 
     @include responsive (desktop) {
-        background-size: 100% 660px;
-            
+        background-size: 100% 95%;    
     }
-
 }
     
    
@@ -26,7 +24,7 @@ body {
 
 
 h1 {
-    font-weight: 300;
+    font-weight: 100;
     color: $primarytext-color;
    @include responsiveFont(24px, 24, 320px, 1600); 
     line-height: 1.21;

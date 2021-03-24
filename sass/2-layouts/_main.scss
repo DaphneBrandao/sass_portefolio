@@ -4,16 +4,17 @@
     margin-right: auto;
     padding-right: 15px;
     padding-left: 15px;
+ 
 }
 
 .main 
 {  
-
     &-container {
         @include flex;
         @include flex-direction(column);
         @include justify-content(center);
         @include align-items(center);
+        
     }
 }
 
@@ -26,7 +27,8 @@
      //RESPOSIVE DESKTOP - IMAGE
     @include responsive (desktop)
     {
-        @include position(absolute, 5%);
+        @include position(absolute, 0, 10%);
+        margin-top: 72px;
         width: 80%;
 
     }
@@ -44,7 +46,7 @@
         //RESPOSIVE DESKTOP - IMAGE
         @include responsive (desktop)
         {
-            @include size (344px, 702px);
+            @include size (374px, 702px);
             object-fit: contain;
         }
     }
@@ -59,7 +61,7 @@
     @include responsive(desktop) {
 
         @include size(132px, 42px);
-        @include position(absolute, 0, 50%);
+        @include position(absolute, 0, 51%);
         z-index: 1;
         margin-top: 164px;
     }
@@ -73,7 +75,7 @@
     @include align-items(center);
     @include justify-content(center);
     order:3;
-    
+    margin-top: 23px;
 
     //RESPONSIVE DESKTOP
     @include responsive (desktop) 
@@ -81,19 +83,15 @@
         @include flex;
         @include flex-direction(column);
         @include align-items(flex-start);
-        @include position(absolute, 0, 50%);
+        @include position(absolute, 0, 51%);
         text-align: left;
         margin-top: 235px;
-        margin-left: auto;
-   
     }
     //TITLE H1
     &-title 
     {
-
-        margin-top: 23px;
-        margin-bottom: 25px;
-        font-weight: 100;
+        margin-bottom: 9px;
+        
         text-align: center;
         max-width: 100%;
         
@@ -102,20 +100,22 @@
         {
             @include size (575px, 116px);
             text-align: left;
+           
+            
         }
     }
     
     //SUBTITLE - p
     &-subtitle {
         text-align: center;
-        margin-bottom: 26px;
         width: 100%;
+    
 
          //RESPONSIVE DESKTOP - SUBTITLE
         @include responsive(desktop) 
         {
             @include size(520px, 48px);
-            text-align: left;
+            text-align: left; 
             width: 80%;
         }
     }

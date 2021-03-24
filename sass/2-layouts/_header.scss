@@ -1,12 +1,21 @@
 .header 
 {
-  display:none;
 
-  //RESPOSIVE DESKTOP - HEADER
+  &-container {
+    display:none;
+      //RESPOSIVE DESKTOP - HEADER
   @include responsive (desktop) 
   {
     @include flex;
     @include justify-content(flex-end);
+
+    position: absolute;
+    top:  0;
+    right: 0;
+    margin-right: 40px;
+    margin-top: 40px;
+    width: 100%;
+  }
    
   }
 
@@ -15,8 +24,9 @@
   {
     @include flex;
     @include flex-direction(row);
+    
     list-style-type: none;
-    height: 72px; 
+    margin: 0;
   }
 }
 
@@ -27,5 +37,5 @@
 
 //ICON TWITTER
 .twitter {
-  margin-right: 40px;
+  //margin-right: 40px;
 }

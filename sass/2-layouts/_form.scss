@@ -4,7 +4,7 @@
     {
         @include size(280px, 45px);
         @include position(relative);
-
+        margin-top: 26px;
         //INPUT    
         &_input 
         {
@@ -30,7 +30,7 @@
         //BUTTON
         &_button 
         {
-            @include size(92px, 45px);
+            @include size(92px, 47px);
             @include position(absolute, 0, 0);
             display: inline;
             margin-left: 177px;
