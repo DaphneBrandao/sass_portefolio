@@ -34,6 +34,7 @@ body {
 h1 {
   font-weight: 100;
   color: #ffff;
+  color: -webkit-text-fill-color(#ffff);
   font-size: calc(24px + 24 * ((100vw - 320px) / 1600));
   line-height: 1.21;
   margin: 0;
