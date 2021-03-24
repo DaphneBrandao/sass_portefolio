@@ -208,9 +208,9 @@ p {
     width: 132px;
     height: 42px;
     position: absolute;
-    z-index: 1;
-    left: 50%;
     top: 0;
+    left: 50%;
+    z-index: 1;
     margin-top: 164px;
   }
 }
@@ -264,10 +264,10 @@ p {
     -webkit-align-items: flex-start;
     -moz-box-items: flex-start;
     align-items: flex-start;
-    text-align: left;
     position: absolute;
     top: 0;
     left: 50%;
+    text-align: left;
     margin-top: 235px;
     margin-left: auto;
   }
@@ -399,11 +399,11 @@ p {
 
 .content-form_button {
   width: 92px;
-  height: 47px;
-  display: inline;
+  height: 45px;
   position: absolute;
   top: 0;
   left: 0;
+  display: inline;
   margin-left: 177px;
   background-color: tomato;
   color: #ffff;

@@ -3,8 +3,8 @@
     &-form 
     {
         @include size(280px, 45px);
-        position: relative;
-        
+        @include position(relative);
+
         //INPUT    
         &_input 
         {
@@ -30,11 +30,9 @@
         //BUTTON
         &_button 
         {
-            @include size(92px, 47px);
+            @include size(92px, 45px);
+            @include position(absolute, 0, 0);
             display: inline;
-            position: absolute;
-            top: 0;
-            left: 0;
             margin-left: 177px;
            
             background-color:$buttoncolor;

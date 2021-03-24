@@ -1,6 +1,7 @@
 //FONTFACE
 
-@font-face {
+@font-face 
+{
     font-family: 'Segoe UI Web (West European)';
     src: url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-light.woff2') format('woff2'), 
     url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-light.woff') format('woff');
@@ -8,21 +9,24 @@
     font-style: normal;
 }
 
-@font-face {
+@font-face 
+{
     font-family: 'Segoe UI Web (West European)';
     src: url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semilight.woff2') format('woff2'), url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semilight.woff') format('woff');
     font-weight: 300;
     font-style: normal;
-  }
+}
 
 //SIZE
-@mixin size ($width, $height) {
+@mixin size ($width, $height) 
+{
     width: $width;
     height: $height;
 }
 
 //MARGIN
-@mixin margin ($top, $right, $bottom, $left) {
+@mixin margin ($top, $right, $bottom, $left) 
+{
     margin-top: $top;
     margin-right: $right;
     margin-top: $bottom;
@@ -31,7 +35,8 @@
 
 //PLACEHOLER
 
-@mixin placeholder {
+@mixin placeholder 
+{
  
     &::-webkit-input-placeholder 
     {
@@ -53,29 +58,34 @@
 
 
 //GRADIENT
-@mixin linearGradient($direction, $lis) {
+@mixin linearGradient($direction, $lis) 
+{
     background: -webkit-linear-gradient($direction, $list);
     background: -moz-linear-gradient($direction, $list);
     background: linear-gradient($direction, $list);
     background: -ms-linear-gradient($direction, $list);
-
 }
 
-
-
-
-
 //FLUID-TYPE
-
-@mixin responsiveFont ($minFont, $difFont, $smallVw, $largeVw) {
-
+@mixin responsiveFont ($minFont, $difFont, $smallVw, $largeVw) 
+{
     font-size: calc(#{$minFont} + #{$difFont} * ((100vw - #{$smallVw}) / #{$largeVw}));
 
-    @media (max-width: $smallVw) {
+    @media (max-width: $smallVw) 
+    {
         font-size: $minFont;        
     }
-    @media (min-width: round($smallVw + $largeVw)) {
+
+    @media (min-width: round($smallVw + $largeVw)) 
+    {
         font-size: round($minFont + $difFont);
     }
 }
 
+
+//MIXIN POSITION
+@mixin position ($position, $top:null, $left:null) { 
+    position: $position;
+    top: $top;
+    left: $left;
+}
