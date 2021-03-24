@@ -5,12 +5,14 @@
         @include size(280px, 45px);
         @include position(relative);
         margin-top: 26px;
-         //RESPOSIBE DESKTOP - INPUT
+
+         //RESPOSIBE DESKTOP - FROM
          @include responsive (desktop) 
          {
-             @include size(278px, 55px);
-             margin-top: 48px;
+            @include size(278px, 55px);
+            margin-top: 48px;
          }
+
         //INPUT    
         &_input 
         {
@@ -31,9 +33,9 @@
             @include responsive (desktop) 
             {
                 @include size(278px, 55px);
-              
             }
         }
+        
         //BUTTON
         &_button 
         {

@@ -15,11 +15,27 @@ $large: 1024px; //desktop
 
 
 //BG GRADIENT   
-$startBlue: rgba(32,56,98,1);
-$endBlue: rgba(67,86,173,1); 
+//$startBlue: rgba(32,56,98,1);
+//$endBlue: rgba(67,86,173,1); 
 
-$list: $startBlue 0%, $endBlue 100%;
+$startcolor: #62a7ff; //176%
+$secondcolor: #435ab6; //77%
+$thirdcolor:  #435ab6; //77%
+$fourthcolor: #3f51ad; //66%
+$fifthcolor: #142d4c; //-36%
 
+
+$startColor: rgba(98,167,255,1); 
+$secondColor:  rgba(63,81,173,1); 
+$thirdColor: rgba(67,90,182,1); 
+$fourthColor: rgba(20,45,76,1); 
+$fifthColor: rgba(0,0,0,1);
+
+//background-image: linear-gradient(289deg, #62a7ff 176%, #435ab6 77%, #435ab6 77%, #3f51ad 66%, #142d4c -36%);
+//$list: $startBlue 0%, $endBlue 100%;
+$list: $startColor -45%, $secondColor 26%, $thirdColor 52%, $thirdColor 67%, $thirdColor 50%, $fourthColor 100%, $fifthColor 176%;
+//$list: $startcolor -20%, $secondcolor 26%, $thirdcolor 52%, $thirdcolor 52%, $thirdcolor 72%, $fifthcolor 100%, $fifthcolor 126%;
+//$list: #62a7ff -45%, #435ab6 26%, #435ab6 65%, #3f51ad 80%, #142d4c 100%;
 //image
 $margin: 20px;
 $aspect-width: 8;

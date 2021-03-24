@@ -1,5 +1,7 @@
 html {
-    @include linearGradient(180deg, $list); 
+    //@include linearGradient(180deg, $list); 
+   @include linearGradient(289deg, $list); 
+    
     background-repeat: no-repeat;
     min-height: 100%;
     min-height: 780px;

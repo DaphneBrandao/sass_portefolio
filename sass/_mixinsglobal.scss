@@ -1,5 +1,4 @@
 //FONTFACE
-
 @font-face 
 {
     font-family: 'Segoe UI Web (West European)';
@@ -24,20 +23,9 @@
     height: $height;
 }
 
-//MARGIN
-@mixin margin ($top, $right, $bottom, $left) 
-{
-    margin-top: $top;
-    margin-right: $right;
-    margin-top: $bottom;
-    margin-left: $left;
-}
-
 //PLACEHOLER
-
 @mixin placeholder 
 {
- 
     &::-webkit-input-placeholder 
     {
         @content;
@@ -56,14 +44,14 @@
     } 
 }
 
-
 //GRADIENT
-@mixin linearGradient($direction, $lis) 
+@mixin linearGradient($direction, $list) 
 {
     background: -webkit-linear-gradient($direction, $list);
     background: -moz-linear-gradient($direction, $list);
     background: linear-gradient($direction, $list);
     background: -ms-linear-gradient($direction, $list);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#62a7ff",endColorstr="#000000",GradientType=1);
 }
 
 //FLUID-TYPE
@@ -81,7 +69,6 @@
         font-size: round($minFont + $difFont);
     }
 }
-
 
 //MIXIN POSITION
 @mixin position ($position, $top:null, $left:null) { 
