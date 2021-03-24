@@ -308,6 +308,14 @@ p {
   margin-top: 26px;
 }
 
+@media only screen and (min-width: 1024px) {
+  .content-form {
+    width: 278px;
+    height: 55px;
+    margin-top: 48px;
+  }
+}
+
 .content-form_input {
   width: 177px;
   height: 45px;
@@ -392,7 +400,6 @@ p {
   .content-form_input {
     width: 278px;
     height: 55px;
-    margin-top: 48px;
   }
 }
 
