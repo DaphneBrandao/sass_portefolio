@@ -51,6 +51,7 @@
     background: -moz-linear-gradient($direction, $list);
     background: linear-gradient($direction, $list);
     background: -ms-linear-gradient($direction, $list);
+    filter: progid:DXImageTransform.Microsoft.gradient($direction, $list);
 }
 
 //FLUID-TYPE

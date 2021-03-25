@@ -29,7 +29,7 @@
      //RESPOSIVE DESKTOP - IMAGE
     @include responsive (lg)
     {
-        @include position(absolute, 0, 10%);
+        @include position(absolute, 0, 15%);
         @include size (374px, 732px);
         margin-top: 72px;
         width: 80%;
@@ -62,7 +62,7 @@
     @include responsive(lg) {
 
         @include size(132px, 42px);
-        @include position(absolute, 0, 52%);
+        @include position(absolute, 0, 55%);
         z-index: 1;
         margin-top: 164px;
     }
@@ -84,7 +84,7 @@
         @include flex;
         @include flex-direction(column);
         @include align-items(flex-start);
-        @include position(absolute, 0, 52%);
+        @include position(absolute, 0, 55%);
         text-align: left;
         margin-top: 235px;
     }

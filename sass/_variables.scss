@@ -11,10 +11,10 @@ $placeholder-color: #9fa3a7;
 //BREAKPOINTS
 
 $small: 320px;//320px; //mobile
-$medium: 768px; //tablet - 768
+$medium: 600px; //tablet 
 $large: 992px; //tablet
-$extralarge: 1200px;//desktop
-$exextralarge: 1400px;//desktop
+$extralarge: 1200px;//desktop 
+$exextralarge: 1400px;//desktop 
 
 
 //BG GRADIENT   
@@ -40,8 +40,5 @@ $list: $startColor -45%, $secondColor 26%, $thirdColor 52%, $thirdColor 67%, $th
 //$list: $startcolor -20%, $secondcolor 26%, $thirdcolor 52%, $thirdcolor 52%, $thirdcolor 72%, $fifthcolor 100%, $fifthcolor 126%;
 //$list:21deg, #62a7ff 155%, #435ab6 73%, #435ab6 73%, #3f51ad 64%, #142d4c -20%;
 //$list: #62a7ff -45%, #435ab6 26%, #435ab6 65%, #3f51ad 80%, #142d4c 100%;
-//image
-$margin: 20px;
-$aspect-width: 8;
-$aspect-height: 3;
-$constant: ($margin * $aspect-width) / ($aspect-height * 3);
+
+
