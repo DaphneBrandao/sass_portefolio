@@ -15,7 +15,7 @@
 html {
   background: linear-gradient(289deg, #62a7ff -45%, #3f51ad 26%, #435ab6 52%, #435ab6 67%, #435ab6 50%, #142d4c 100%, black 176%);
   background: -ms-linear-gradient(289deg, #62a7ff -45%, #3f51ad 26%, #435ab6 52%, #435ab6 67%, #435ab6 50%, #142d4c 100%, black 176%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#62a7ff",GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient 289deg, #62a7ff -45%, #3f51ad 26%, #435ab6 52%, #435ab6 67%, #435ab6 50%, #142d4c 100%, black 176%;
   height: 100%;
   background-repeat: no-repeat;
   min-height: 100%;
@@ -286,6 +286,8 @@ p {
 }
 
 .content-subtitle {
+  width: 280px;
+  height: 48px;
   text-align: center;
   width: 100%;
 }

@@ -118,6 +118,7 @@
     
     //SUBTITLE - p
     &-subtitle {
+        @include size(280px, 48px);
         text-align: center;
         width: 100%;
 
