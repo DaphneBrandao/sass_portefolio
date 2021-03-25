@@ -7,7 +7,7 @@ html {
     min-height: 759px;
 
     @include responsive (lg) {
-        @include linearGradient(to left, $list); 
+        @include linearGradient(to top, $list); 
         background-size: 100% 95%;    
     }
 } 
