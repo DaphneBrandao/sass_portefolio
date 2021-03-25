@@ -6,8 +6,9 @@ html {
     min-height: 100%;
     min-height: 759px;
    
-    @include responsive (lg) {
-        background-size: 100% 80%;    
+    
+    @include responsive (xl) {
+        background-size: 100% 95%;    
     }
 } 
    
@@ -31,7 +32,7 @@ p {
     font-weight: 300;
     color: $secondarytext-color;
     text-decoration-color:$primarytext-color;
-    margin-bottom: 48px;
-    margin: 0;
     line-height: 1.5;
+    margin: 0;
+    
 }
