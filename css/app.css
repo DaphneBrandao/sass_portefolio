@@ -33,10 +33,10 @@ body {
 
 h1 {
   font-weight: 100;
-  color: #ffff;
-  color: -webkit-text-fill-color(#ffff);
-  -webkit-text-decoration-color: #ffff;
-          text-decoration-color: #ffff;
+  color: white;
+  color: -webkit-text-fill-color(white);
+  -webkit-text-decoration-color: white;
+          text-decoration-color: white;
   font-size: calc(24px + 24 * ((100vw - 320px) / 1600));
   line-height: 1.21;
   margin: 0;
@@ -57,9 +57,9 @@ h1 {
 p {
   font-size: calc(16px + 8 * ((100vw - 320px) / 1600));
   font-weight: 300;
-  color: #a8a8a8;
-  -webkit-text-decoration-color: #ffff;
-          text-decoration-color: #ffff;
+  color: rgba(255, 255, 255, 0.87);
+  -webkit-text-decoration-color: white;
+          text-decoration-color: white;
   margin-bottom: 48px;
   margin: 0;
   line-height: 1.5;
@@ -418,7 +418,7 @@ p {
   display: inline;
   margin-left: 177px;
   background-color: tomato;
-  color: #ffff;
+  color: white;
   letter-spacing: 2.8px;
   font-weight: 700;
   font-size: 0.875rem;
