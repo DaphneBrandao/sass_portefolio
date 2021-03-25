@@ -96,21 +96,21 @@
         //RESPONSIVE DESKTOP - TITLE
         @include responsive (lg) 
         {
-            @include size (575px, 116px);
+            @include size (475px, 116px);
             text-align: left;  
         }
 
         //RESPONSIVE DESKTOP - TITLE
         @include responsive (xl) 
         {
-            @include size (685px, 116px);
+            @include size (585px, 116px);
             text-align: left;  
         }
 
         //RESPONSIVE DESKTOP - TITLE
         @include responsive (xxl) 
         {
-            @include size (775px, 116px);
+            @include size (669px, 116px);
             text-align: left;  
         }
 

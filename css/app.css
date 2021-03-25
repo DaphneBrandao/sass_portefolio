@@ -139,7 +139,7 @@ p {
   margin-top: 10px;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 992px) {
   .iphoneimage {
     position: absolute;
     top: 0;
@@ -163,7 +163,7 @@ p {
      object-position: 0% 0%;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 992px) {
   .iphoneimage-mobile {
     width: 374px;
     height: 702px;
@@ -178,7 +178,7 @@ p {
   margin-top: 40px;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 992px) {
   .logo {
     width: 132px;
     height: 42px;
@@ -222,7 +222,7 @@ p {
   -ms-flex-pack: center;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 992px) {
   .content {
     display: -ms-flexbox;
     display: flex;
@@ -254,9 +254,9 @@ p {
   max-width: 100%;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 992px) {
   .content-title {
-    width: 575px;
+    width: 475px;
     height: 116px;
     text-align: left;
   }
@@ -264,15 +264,15 @@ p {
 
 @media only screen and (min-width: 1200px) {
   .content-title {
-    width: 685px;
+    width: 585px;
     height: 116px;
     text-align: left;
   }
 }
 
-@media only screen and (min-width: 2400px) {
+@media only screen and (min-width: 1400px) {
   .content-title {
-    width: 775px;
+    width: 669px;
     height: 116px;
     text-align: left;
   }
@@ -283,7 +283,7 @@ p {
   width: 100%;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 992px) {
   .content-subtitle {
     width: 520px;
     height: 48px;
@@ -299,7 +299,7 @@ p {
   margin-top: 26px;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 992px) {
   .content-form {
     width: 278px;
     height: 55px;
@@ -387,7 +387,7 @@ p {
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 992px) {
   .content-form_input {
     width: 278px;
     height: 55px;
@@ -411,7 +411,7 @@ p {
   border: none;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 992px) {
   .content-form_button {
     width: 122px;
     height: 57px;
