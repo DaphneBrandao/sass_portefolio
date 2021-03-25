@@ -1,5 +1,5 @@
 .wrapper {
-    max-width: 1137px; 
+  //  max-width: 1137px; 
     margin-left: auto;
     margin-right: auto;
     padding-right: 15px;
@@ -29,7 +29,7 @@
         @include position(absolute, 0, 10%);
         @include size (374px, 732px);
         margin-top: 72px;
-        //width: 80%;
+        width: 80%;
     }
 
     //IMAGE 
@@ -73,7 +73,7 @@
     @include align-items(center);
     @include justify-content(center);
     order:3;
-    margin-top: 23px;
+    margin-top: 29px;
 
     //RESPONSIVE DESKTOP
     @include responsive (desktop) 
@@ -88,14 +88,14 @@
     //TITLE H1
     &-title 
     {
-        margin-bottom: 9px;
+        margin-bottom: 30px;
         text-align: center;
         max-width: 100%;
         
         //RESPONSIVE DESKTOP - TITLE
         @include responsive (desktop) 
         {
-            @include size (645px, 116px);
+            @include size (575px, 116px);
             text-align: left;  
         }
     }
@@ -106,7 +106,7 @@
         width: 100%;
 
          //RESPONSIVE DESKTOP - SUBTITLE
-        @include responsive(desktop) 
+        @include responsive (desktop) 
         {
             @include size(520px, 48px);
             text-align: left; 
