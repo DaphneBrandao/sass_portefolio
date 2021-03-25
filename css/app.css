@@ -57,7 +57,7 @@ h1 {
 p {
   font-size: calc(16px + 8 * ((100vw - 320px) / 1600));
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.6);
+  color: #a8a8a8;
   -webkit-text-decoration-color: #ffff;
           text-decoration-color: #ffff;
   margin-bottom: 48px;
@@ -287,7 +287,7 @@ p {
 
 @media only screen and (min-width: 1024px) {
   .content-title {
-    width: 575px;
+    width: 645px;
     height: 116px;
     text-align: left;
   }

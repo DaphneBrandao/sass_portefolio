@@ -95,7 +95,7 @@
         //RESPONSIVE DESKTOP - TITLE
         @include responsive (desktop) 
         {
-            @include size (575px, 116px);
+            @include size (645px, 116px);
             text-align: left;  
         }
     }
