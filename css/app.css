@@ -21,12 +21,6 @@ html {
   min-height: 780px;
 }
 
-@media only screen and (min-width: 1024px) {
-  html {
-    background-size: 100% 95%;
-  }
-}
-
 body {
   font-family: 'Segoe UI Local', 'Segoe UI Web (West European)';
 }
@@ -79,31 +73,6 @@ p {
 
 .header-container {
   display: none;
-}
-
-@media only screen and (min-width: 1024px) {
-  .header-container {
-    display: -ms-flexbox;
-    display: flex;
-    display: -webkit-box;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    -moz-justify-content: flex-end;
-    justify-content: flex-end;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-right: 40px;
-    margin-top: 40px;
-    width: 100%;
-  }
-  .header-container else {
-    -webkit-box-pack: flex-end;
-    -ms-flex-pack: flex-end;
-  }
 }
 
 .header-container_socialmedia {
@@ -288,6 +257,22 @@ p {
 @media only screen and (min-width: 1024px) {
   .content-title {
     width: 575px;
+    height: 116px;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .content-title {
+    width: 685px;
+    height: 116px;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 2400px) {
+  .content-title {
+    width: 775px;
     height: 116px;
     text-align: left;
   }

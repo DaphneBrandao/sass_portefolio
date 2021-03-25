@@ -7,7 +7,7 @@
         margin-top: 26px;
 
          //RESPOSIBE DESKTOP - FROM
-         @include responsive (desktop) 
+         @include responsive (lg) 
          {
             @include size(278px, 55px);
             margin-top: 52px;
@@ -30,7 +30,7 @@
             }
 
             //RESPOSIBE DESKTOP - INPUT
-            @include responsive (desktop) 
+            @include responsive (lg) 
             {
                 @include size(278px, 55px);
             }
@@ -52,7 +52,7 @@
             border: none;
     
             //RESPONSIVE DESKTOP - button
-            @include responsive (desktop) 
+            @include responsive (lg) 
             {
                 @include size(122px,57px);
                 margin-left: 290px;
