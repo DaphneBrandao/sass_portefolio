@@ -19,6 +19,7 @@ h1 {
     font-weight: 100;
     color: $primarytext-color;
     color: -webkit-text-fill-color($primarytext-color);
+    text-decoration-color:$primarytext-color;
     @include responsiveFont(24px, 24, 320px, 1600); 
     line-height: 1.21;
     margin: 0;
@@ -28,6 +29,7 @@ p {
     @include responsiveFont(16px, 8, 320px, 1600);
     font-weight: 300;
     color: $secondarytext-color;
+    text-decoration-color:$primarytext-color;
     margin-bottom: 48px;
     margin: 0;
     line-height: 1.5;

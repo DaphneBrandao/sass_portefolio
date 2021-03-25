@@ -35,6 +35,8 @@ h1 {
   font-weight: 100;
   color: #ffff;
   color: -webkit-text-fill-color(#ffff);
+  -webkit-text-decoration-color: #ffff;
+          text-decoration-color: #ffff;
   font-size: calc(24px + 24 * ((100vw - 320px) / 1600));
   line-height: 1.21;
   margin: 0;
@@ -56,6 +58,8 @@ p {
   font-size: calc(16px + 8 * ((100vw - 320px) / 1600));
   font-weight: 300;
   color: rgba(255, 255, 255, 0.6);
+  -webkit-text-decoration-color: #ffff;
+          text-decoration-color: #ffff;
   margin-bottom: 48px;
   margin: 0;
   line-height: 1.5;
@@ -172,8 +176,9 @@ p {
     position: absolute;
     top: 0;
     left: 10%;
+    width: 374px;
+    height: 732px;
     margin-top: 72px;
-    width: 80%;
   }
 }
 

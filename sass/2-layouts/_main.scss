@@ -27,8 +27,9 @@
     @include responsive (desktop)
     {
         @include position(absolute, 0, 10%);
+        @include size (374px, 732px);
         margin-top: 72px;
-        width: 80%;
+        //width: 80%;
     }
 
     //IMAGE 
