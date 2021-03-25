@@ -21,9 +21,15 @@ html {
   min-height: 759px;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 992px) {
   html {
-    background-size: 100% 95%;
+    background-size: 100% 90%;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  html {
+    background-size: 100% 82%;
   }
 }
 
