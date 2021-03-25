@@ -320,6 +320,8 @@ p {
   border-radius: 8px 0px 0px 8px;
   border: none;
   padding-left: 11px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .content-form_input::-webkit-input-placeholder {
@@ -416,12 +418,10 @@ p {
   font-size: 0.875rem;
   border-radius: 0px 8px 8px 0px;
   border: none;
-  -webkit-appearance: none;
 }
 
 @media only screen and (min-width: 992px) {
   .content-form_button {
-    -webkit-appearance: none;
     width: 122px;
     height: 57px;
     margin-left: 290px;
