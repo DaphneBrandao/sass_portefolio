@@ -50,10 +50,11 @@
             font-size: 0.875rem;
             border-radius: 0px 8px 8px 0px;
             border: none;
-            
+            -webkit-appearance:none;
             //RESPONSIVE DESKTOP - button
             @include responsive (lg) 
             {
+                -webkit-appearance:none;
                 @include size(122px,57px);
                 margin-left: 290px;
             }
