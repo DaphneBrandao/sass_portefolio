@@ -13,38 +13,25 @@
 }
 
 html {
-  background: -webkit-gradient(linear, right bottom, left top, from(#142d4c), color-stop(66%, #3f51ad), color-stop(77%, #435ab6), color-stop(77%, #435ab6), color-stop(176%, #62a7ff));
-  background: linear-gradient(to top left, #142d4c 0%, #3f51ad 66%, #435ab6 77%, #435ab6 77%, #62a7ff 176%);
-  background: -ms-linear-gradient(to top left, #142d4c 0%, #3f51ad 66%, #435ab6 77%, #435ab6 77%, #62a7ff 176%);
-  filter: progid:DXImageTransform.Microsoft.gradient to top left, #142d4c 0%, #3f51ad 66%, #435ab6 77%, #435ab6 77%, #62a7ff 176%;
+  background: -webkit-gradient(linear, left top, right bottom, from(#142d4c), color-stop(66%, #3f51ad), color-stop(77%, #435ab6), color-stop(77%, #435ab6), color-stop(176%, #62a7ff));
+  background: linear-gradient(to bottom right, #142d4c 0%, #3f51ad 66%, #435ab6 77%, #435ab6 77%, #62a7ff 176%);
+  background: -ms-linear-gradient(to bottom right, #142d4c 0%, #3f51ad 66%, #435ab6 77%, #435ab6 77%, #62a7ff 176%);
+  filter: progid:DXImageTransform.Microsoft.gradient to bottom right, #142d4c 0%, #3f51ad 66%, #435ab6 77%, #435ab6 77%, #62a7ff 176%;
   height: 100%;
+  width: 100%;
   background-repeat: no-repeat;
-  min-height: 100%;
-  margin: 0;
-  padding: 0;
   overflow-x: hidden;
-}
-
-@media only screen and (min-width: 992px) {
-  html {
-    background-size: 100% 85%;
-    background: -webkit-gradient(linear, left top, right bottom, from(#142d4c), color-stop(66%, #3f51ad), color-stop(77%, #435ab6), color-stop(77%, #435ab6), color-stop(176%, #62a7ff));
-    background: linear-gradient(to bottom right, #142d4c 0%, #3f51ad 66%, #435ab6 77%, #435ab6 77%, #62a7ff 176%);
-    background: -ms-linear-gradient(to bottom right, #142d4c 0%, #3f51ad 66%, #435ab6 77%, #435ab6 77%, #62a7ff 176%);
-    filter: progid:DXImageTransform.Microsoft.gradient to bottom right, #142d4c 0%, #3f51ad 66%, #435ab6 77%, #435ab6 77%, #62a7ff 176%;
-    background-repeat: no-repeat;
-  }
 }
 
 @media only screen and (min-width: 1200px) {
   html {
-    background-size: 100% 75%;
+    background-size: 100% 750px;
   }
 }
 
 @media only screen and (min-width: 1400px) {
   html {
-    background-size: 100% 82%;
+    background-size: 100% 748px;
   }
 }
 

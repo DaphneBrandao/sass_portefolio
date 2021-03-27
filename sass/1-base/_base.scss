@@ -1,26 +1,18 @@
 html {
     //@include linearGradient(180deg, $list); 
    //@include linearGradient(289deg, $list); 
-   @include linearGradient(to top left, $list); 
-    height: 100%;   
+   @include linearGradient(to bottom right, $list); 
+    height: 100%; 
+    width: 100%;  
     background-repeat: no-repeat;
-    min-height: 100%;
-    //width:100%;
-    margin: 0;
-    padding: 0;
     overflow-x: hidden;
 
-    @include responsive (lg) {
-        background-size: 100% 85%; 
-        @include linearGradient(to bottom right, $list);   
-        background-repeat: no-repeat; 
-    }
     @include responsive (xl) {
-        background-size: 100% 75%; 
+        background-size: 100% 750px; 
     }
   
     @include responsive (xxl) {
-        background-size: 100% 82%; 
+        background-size: 100% 748px; 
     }
   
     
