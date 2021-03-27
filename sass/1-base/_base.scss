@@ -5,9 +5,10 @@ html {
     height: 100%;   
     background-repeat: no-repeat;
     min-height: 100%;
-    max-width: 100%;
+    //width:100%;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 
     @include responsive (lg) {
         background-size: 100% 85%; 
@@ -15,7 +16,7 @@ html {
         background-repeat: no-repeat; 
     }
     @include responsive (xl) {
-        background-size: 100% 82%; 
+        background-size: 100% 75%; 
     }
   
     @include responsive (xxl) {
@@ -27,6 +28,7 @@ html {
    
 body {
    
+   overflow-x: hidden;
     font-family: 'Segoe UI Local', 'Segoe UI Web (West European)';
 }
 
