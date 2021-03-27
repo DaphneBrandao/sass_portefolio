@@ -20,7 +20,6 @@ html {
   height: 100%;
   background-repeat: no-repeat;
   min-height: 100%;
-  min-height: 759px;
   max-width: 100%;
 }
 
@@ -32,6 +31,18 @@ html {
     background: -ms-linear-gradient(to bottom right, #142d4c 0%, #3f51ad 66%, #435ab6 77%, #435ab6 77%, #62a7ff 176%);
     filter: progid:DXImageTransform.Microsoft.gradient to bottom right, #142d4c 0%, #3f51ad 66%, #435ab6 77%, #435ab6 77%, #62a7ff 176%;
     background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  html {
+    background-size: 100% 82%;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  html {
+    background-size: 100% 82%;
   }
 }
 
