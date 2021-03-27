@@ -1,12 +1,3 @@
-/*.wrapper {
-    
-    //max-width: 1137px; 
-    //margin-left: auto;
-    margin-right: auto;
-    //padding-right: 15px;
-    //padding-left: 15px;
-}*/
-
 .main 
 {  
     &-container {
@@ -26,7 +17,7 @@
 
     
 
-     //RESPOSIVE DESKTOP - IMAGE
+     //RESPOSIVE TABLET- IMAGE
     @include responsive (lg)
     {
         @include position(absolute, 0, 15%);
@@ -45,7 +36,7 @@
         object-fit: cover;
         object-position: 0% 0%;
 
-        //RESPOSIVE DESKTOP - IMAGE
+        //RESPOSIVE TABLET - IMAGE
         @include responsive (lg)
         {
             @include size (374px, 702px);
@@ -78,8 +69,8 @@
     order:3;
     margin-top: 23px;
     
-    //RESPONSIVE DESKTOP
-    @include responsive (lg) //992
+    //RESPONSIVE LARGE
+    @include responsive (lg) 
     {
         @include flex;
         @include flex-direction(column);
@@ -88,7 +79,6 @@
         text-align: left;
         margin-top: 235px;
     }
-
   
 
     //TITLE H1
@@ -100,16 +90,16 @@
         width: 100%;
         
 
-        //RESPONSIVE DESKTOP - TITLE
-        @include responsive (md) //768
+        //RESPONSIVE TABLET 
+        @include responsive (md) 
         {
             text-align: center; 
             margin-bottom: 9px;
             width: 60%;
         }
 
-        //RESPONSIVE DESKTOP - TITLE
-        @include responsive (lg) //992 - 1200
+        //RESPONSIVE TBLET- TITLE
+        @include responsive (lg) 
         {
             text-align: left; 
             margin-bottom: 26px;
@@ -117,7 +107,7 @@
         }
 
         //RESPONSIVE DESKTOP - TITLE
-        @include responsive (xxl) //1400
+        @include responsive (xxl) 
         {
             text-align: left;  
             width: 80%;
@@ -133,8 +123,8 @@
         margin-bottom: 26px;
 
 
-        //RESPONSIVE DESKTOP - TITLE
-        @include responsive (md) //768
+        //RESPONSIVE TABLET - TITLE
+        @include responsive (md) 
         {
             
             text-align: center; 
@@ -142,8 +132,8 @@
             width: 50%;
         }
 
-         //RESPONSIVE DESKTOP - SUBTITLE
-        @include responsive (lg) //992
+         //RESPONSIVE TABLET - SUBTITLE
+        @include responsive (lg)
         {
        
             text-align: left; 
@@ -152,7 +142,7 @@
         }
 
         //RESPONSIVE DESKTOP - TITLE
-        @include responsive (xxl) //1400
+        @include responsive (xxl) 
         {
             text-align: left;  
             width: 70%;
