@@ -6,7 +6,8 @@ html {
     background-repeat: no-repeat;
     min-height: 100%;
     max-width: 100%;
-   
+   margin: 0;
+   padding: 0;
 
     @include responsive (lg) {
         background-size: 100% 85%; 
